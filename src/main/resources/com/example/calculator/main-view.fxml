@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.calculator.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox spacing="16">
+        <Label fx:id="operationLabel"/>
+        <HBox spacing="16">
+            <Button text="1" onAction="#onNumberButtonClick" userData="1" prefWidth="32" prefHeight="32" />
+            <Button text="2" onAction="#onNumberButtonClick" userData="2" prefWidth="32" prefHeight="32" />
+            <Button text="3" onAction="#onNumberButtonClick" userData="3" prefWidth="32" prefHeight="32" />
+            <Button text="⌫" onAction="#onDeleteButtonClick" prefWidth="32" prefHeight="32" />
+        </HBox>
+        <HBox spacing="16">
+            <Button text="4" onAction="#onNumberButtonClick" userData="4" prefWidth="32" prefHeight="32" />
+            <Button text="5" onAction="#onNumberButtonClick" userData="5" prefWidth="32" prefHeight="32" />
+            <Button text="6" onAction="#onNumberButtonClick" userData="6" prefWidth="32" prefHeight="32" />
+            <Button text="+" onAction="#onOperationButtonClick" userData="+" prefWidth="32" prefHeight="32" />
+        </HBox>
+        <HBox spacing="16">
+            <Button text="7" onAction="#onNumberButtonClick" userData="7" prefWidth="32" prefHeight="32" />
+            <Button text="8" onAction="#onNumberButtonClick" userData="8" prefWidth="32" prefHeight="32" />
+            <Button text="9" onAction="#onNumberButtonClick" userData="9" prefWidth="32" prefHeight="32" />
+            <Button text="-" onAction="#onOperationButtonClick" userData="-" prefWidth="32" prefHeight="32" />
+        </HBox>
+        <HBox spacing="16">
+            <Button text="/" onAction="#onOperationButtonClick" userData="/" prefWidth="32" prefHeight="32" />
+            <Button text="0" onAction="#onNumberButtonClick" userData="0" prefWidth="32" prefHeight="32" />
+            <Button text="*" onAction="#onOperationButtonClick" userData="*" prefWidth="32" prefHeight="32" />
+            <Button text="=" onAction="#onEqualButtonClick" prefWidth="32" prefHeight="32" />
+        </HBox>
+    </VBox>
+</VBox>
